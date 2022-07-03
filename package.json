@@ -3,12 +3,7 @@
   "version": "3.8.3",
   "description": "A library to render notion content",
   "author": "9gustin",
-  "keywords": [
-    "Notion",
-    "Notion API",
-    "React Notion",
-    "Notion pages"
-  ],
+  "keywords": ["Notion", "Notion API", "React Notion", "Notion pages"],
   "license": "MIT",
   "repository": "9gustin/react-notion-render",
   "homepage": "https://github.com/9gustin/react-notion-render/",
@@ -25,36 +20,16 @@
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "dev": "npm-run-all --parallel start dev-example",
     "dev-example": "cd dev-example && npm run dev -- -p 3001",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint src/**/*.ts src/**/*.tsx",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "lint": "eslint src/**/*.ts src/**/*.tsx"
+    "prepare": "run-s build"
   },
   "peerDependencies": {
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.1.1",
-    "@types/jest": "^28.1.4",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "@typescript-eslint/eslint-plugin": "^5.30.3",
-    "@typescript-eslint/parser": "^5.30.3",
-    "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
-    "eslint": "^8.19.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-react": "^11.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.17.0",
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
@@ -62,7 +37,5 @@
     "react-scripts": "^5.0.0",
     "typescript": "^4.3.2"
   },
-  "files": [
-    "dist"
-  ]
+  "files": ["dist"]
 }
